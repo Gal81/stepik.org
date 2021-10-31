@@ -24,4 +24,6 @@ for i in range((size // 2 + size % 2)):
 
 print()
 for row in matrix:
-    print(row)
+    for cell in row:
+        print(cell, end=' ')
+    print()
