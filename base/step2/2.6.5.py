@@ -9,7 +9,7 @@ def fill_cell(x, y):
     num += 1
     matrix[x][y] = num
 
-for i in range((size // 2 + size % 2)):
+for i in range(size // 2 + size % 2):
     for j in range(i, size - i):
         fill_cell(i, j)
 
@@ -22,7 +22,6 @@ for i in range((size // 2 + size % 2)):
     for j in range(size - i - 2, i, -1):
         fill_cell(j, i)
 
-print()
 for row in matrix:
     for cell in row:
         print(cell, end=' ')
