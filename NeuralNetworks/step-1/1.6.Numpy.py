@@ -21,3 +21,4 @@ url = 'https://stepic.org/media/attachments/lesson/16462/boston_houses.csv'
 data = urlopen(url)
 matrix = np.loadtxt(data, skiprows=1, delimiter=",", dtype=float)
 print(matrix.mean(axis=0))
+
